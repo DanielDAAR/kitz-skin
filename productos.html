@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Kitz Skin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Estrellas flotantes -->
+    <div class="dreamy-stars">
+        <div class="star">⭐</div>
+        <div class="star">✨</div>
+        <div class="star">🌟</div>
+        <div class="star">💫</div>
+        <div class="star">⭐</div>
+        <div class="star">✨</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <h1>Kitz Skin</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="citas.html">Citas</a>
+            <a href="productos.html" style="color: #F7C9FF;">Productos</a>
+        </nav>
+    </header>
+
+    <!-- Hero de Productos -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2 class="fade-in">Productos Premium</h2>
+            <p class="fade-in delay-1">Descubre nuestra línea exclusiva de productos para el cuidado de la piel. Calidad profesional para uso en casa.</p>
+        </div>
+        <div class="hero-img fade-in delay-2">Productos de Belleza</div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="productos">
+        <h2 class="fade-in">Catálogo Completo</h2>
+        <div class="cards">
+            <div class="card-producto fade-in delay-1">
+                <div class="product-img">Crema Facial</div>
+                <h3>Crema Facial Hidratante</h3>
+                <p class="precio">$25.00</p>
+                <p class="descripcion">Hidratación profunda con ácido hialurónico y vitamina E. Ideal para todo tipo de piel.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('crema-facial')">Agregar al Carrito</a>
+            </div>
+
+            <div class="card-producto fade-in delay-2">
+                <div class="product-img">Serum Premium</div>
+                <h3>Serum Rejuvenecedor</h3>
+                <p class="precio">$35.00</p>
+                <p class="descripcion">Fórmula anti-edad con retinol y colágeno. Reduce líneas de expresión y mejora la textura.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('serum-rejuvenecedor')">Agregar al Carrito</a>
+            </div>
+
+            <div class="card-producto fade-in delay-3">
+                <div class="product-img">Mascarilla</div>
+                <h3>Mascarilla Purificante</h3>
+                <p class="precio">$28.00</p>
+                <p class="descripcion">Arcilla natural y extractos vegetales. Limpia profundamente y minimiza los poros.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('mascarilla-purificante')">Agregar al Carrito</a>
+            </div>
+
+            <div class="card-producto fade-in delay-1">
+                <div class="product-img">Tónico</div>
+                <h3>Tónico Equilibrante</h3>
+                <p class="precio">$22.00</p>
+                <p class="descripcion">Balancea el pH de la piel y prepara para la rutina de cuidado. Sin alcohol.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('tonico-equilibrante')">Agregar al Carrito</a>
+            </div>
+
+            <div class="card-producto fade-in delay-2">
+                <div class="product-img">Protector Solar</div>
+                <h3>Protector Solar SPF 50</h3>
+                <p class="precio">$30.00</p>
+                <p class="descripcion">Protección UV de amplio espectro. Textura ligera y no grasa. Resistente al agua.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('protector-solar')">Agregar al Carrito</a>
+            </div>
+
+            <div class="card-producto fade-in delay-3">
+                <div class="product-img">Exfoliante</div>
+                <h3>Exfoliante Suave</h3>
+                <p class="precio">$26.00</p>
+                <p class="descripcion">Microesferas naturales que renuevan la piel sin irritación. Uso semanal recomendado.</p>
+                <a href="#" class="btn-primary" onclick="KitzSkin.addToCart('exfoliante-suave')">Agregar al Carrito</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section class="carrito-section" id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div class="carrito-container">
+            <div id="carrito-items">
+                <p class="carrito-vacio">Tu carrito está vacío</p>
+            </div>
+            <div class="carrito-total">
+                <h3>Total: $<span id="total">0.00</span></h3>
+                <a href="#" class="btn-primary" id="btn-checkout">Proceder al Pago</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="info-productos">
+        <h2 class="fade-in">¿Por qué elegir nuestros productos?</h2>
+        <div class="cards">
+            <div class="card fade-in delay-1">
+                <h3>🌿 Ingredientes Naturales</h3>
+                <p>Formulados con extractos botánicos y ingredientes naturales de la más alta calidad, libres de parabenos y químicos agresivos.</p>
+            </div>
+            <div class="card fade-in delay-2">
+                <h3>🔬 Tecnología Avanzada</h3>
+                <p>Desarrollados con las últimas innovaciones en dermatología cosmética para resultados visibles y duraderos.</p>
+            </div>
+            <div class="card fade-in delay-3">
+                <h3>✨ Resultados Comprobados</h3>
+                <p>Productos testados dermatológicamente con estudios clínicos que avalan su eficacia y seguridad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>✨ 2025 Kitz Skin - Donde los sueños de belleza se hacen realidad ✨</p>
+        <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">Creado con 💜 por Daniel Alejandro Aldana Rubio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
